@@ -130,12 +130,6 @@ a {
     background-color: #030303;
 }
 
-
-
-
-
-/* TODO: Replace with image later */
-
 #header {
     /*background-color: #484848;*/
     background: url(../images/banners.JPG) no-repeat center;
@@ -286,8 +280,7 @@ span {
         padding-bottom: 10px;
     }
     .connect {
-        display: block;
-        width: 100%;
+        display: block;e
         text-align: center;
         font-size: 20px;
         color: #fff;
