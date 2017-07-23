@@ -43,4 +43,4 @@ var HTMLonlineSchool = ' - %data%</a>';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
 var HTMLonlineURL = '<a class="detail_url" href="%data%">Course Info</a>';
 
-var internationalizeButton = '<button>Internationalize</button>';
+var internationalizeButton = '<a href="#header"><button>Internationalize</button></a>';
