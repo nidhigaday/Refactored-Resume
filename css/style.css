@@ -16,7 +16,7 @@
 
 h1 {
     font-size: 40px;
-    color: #F5A623;
+    color: #9aa229;
     line-height: 48px;
     display: inline;
 }
@@ -85,7 +85,7 @@ p {
 }
 
 a {
-    color: #f5ae2a;
+    color: #9aa229;
     text-decoration: none;
     margin: 10px 0;
     display: block;
@@ -101,16 +101,16 @@ a {
 }
 
 #skillsH3 {
-    color: #F5AE23;
+    color: #9aa229;
     display: none;
 }
 
 .orange {
-    background-color: #F5AE23;
+    background-color: #9aa229;
 }
 
 .orange-text {
-    color: #F5AE23;
+    color: #9aa229;
 }
 
 .white-text {
@@ -353,5 +353,5 @@ span {
 }
 
 .flex-box a:hover {
-    color: #f94;
+    color: #9aa229;
 }
