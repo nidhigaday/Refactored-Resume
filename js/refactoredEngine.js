@@ -9,13 +9,13 @@ $(function() {
             "role": "Front End Web Developer",
             "contacts": //JSON comtacts object within bio object
             {
-                "mobile": "647 470 2686",
+                "mobile": "647 000 000",
                 "email": "nidhi.gaday@gmail.com",
                 "github": "nidhigaday",
                 "linkedin": "NidhiGaday",
                 "location": "Toronto"
             },
-            "message": "Welcome to my resume.",
+            "message": "Hi! Thank you for visiting my resume. If you like it, lets chat!",
             "skills": [" HTML", " CSS", " Javascript", " jQuery"],
             "bioPic": "images/propic.png"
         },
@@ -25,15 +25,15 @@ $(function() {
                 "years": "Aug 2016 - June 2017",
                 "city": "Toronto",
                 "website": "http://q4inc.com",
-                "description": "Responsibilities included website maintenance and update."
+                "description": "HTML, CSS, Javascript, jQuery, JIRA, Zendesk, API, JSON, CMS, Problem Solving"
             },
             {
                 "title": "Technical Support",
                 "employer": "Pearson Embanet",
-                "years": "Aug 2014 - Present",
+                "years": "Aug 2014 - Aug 2016",
                 "city": "Toronto",
                 "website": "http://embanet.com/",
-                "description": "Assisted users taking courses Online"
+                "description": "LMS, RightNow, Technial Support, Troubleshooting, Multi-tasking"
             }
         ],
         education: {
@@ -58,10 +58,29 @@ $(function() {
             }]
         },
         projects: [{
-            "title": "Portfolio",
-            "dates": "2014",
-            "description": "For this portfolio I used Twitter's Bootstrap Framework. The HTML and CSS codes were validated. Some images used in the webpage were taken by me and others were copied from Google resources. I have user Google Fonts for this portfolio. Also I have linked some of my basic work tot he page.",
-            "image": "images/project.png"
+            "title": "Pup Clicker",
+            "dates": "2017",
+            "description": "Javascript, jQuery, MVC",
+            "url": "https://github.com/nidhigaday/Pup-Clicker",
+            "image": "images/pupclicker.jpg"
+        },{
+            "title": "Responsive Mock-up",
+            "dates": "2016",
+            "description": "Mobile-first CSS, Responsive, No-page load",
+            "url": "https://github.com/nidhigaday/responsive-mockup",
+            "image": "images/responsive.jpg"
+        },{
+            "title": "Website Optimization",
+            "dates": "2015",
+            "description": "File Minificaiton, Page Speed Score",
+            "url": "https://github.com/nidhigaday/Website_optimization",
+            "image": "images/optimization.jpg"
+        },{
+            "title": "Frogger",
+            "dates": "2015",
+            "description": "HTML5, Object Oriented Javascript",
+            "url": "https://github.com/nidhigaday/frogger",
+            "image": "images/frogger.jpg"
         }]
     };
 
@@ -73,7 +92,7 @@ $(function() {
 
     var view = {
         init: function() {
-            $("#main").append(internationalizeButton);
+            $("#nameFormat").append(internationalizeButton);
             $('button').click(octopus.nameFormat);
         },
         renderName: function(info) {
@@ -83,7 +102,6 @@ $(function() {
         },
         renderPic: function(info) {
             for (var i = 0; i < info.length; i++) {
-                console.log(info[i]);
                 $("#header").append(info[i]);
             }
         },
@@ -96,6 +114,8 @@ $(function() {
         renderSkills: function(info) {
             for (var n = 0; n < info.length; n++) {
                 $("#skills").append(info[n]);
+                // console.log(this);
+                //             view.animate();
             }
         },
         renderWork: function(info) {
@@ -117,6 +137,7 @@ $(function() {
             }
         },
         renderOnline: function(info) {
+            $("#education").append(HTMLschoolStart);
             $(".education-entry:last").append(HTMLonlineClasses);
             for (var s = 0; s < info.length; s++) {
                 $(".education-entry:last").append(info[s]);
@@ -144,7 +165,11 @@ $(function() {
             if (document.getElementsByClassName('flex-item').length === 0) {
                 document.getElementById('letsConnect').style.display = 'none';
             }
-        },
+        }
+        // animate: function() {
+        //     var left = $('.skills .white-text').offset().left;
+        //     $(".skills .white-text").css({ left: left }).animate({ "left": "0px" }, "slow");
+        // }
     };
 
 
@@ -225,6 +250,7 @@ $(function() {
                 HTMLprojectTitle.replace("%data%", project.title),
                 HTMLprojectDates.replace("%data%", project.dates),
                 HTMLprojectDescription.replace("%data%", project.description),
+                HTMLprojectUrl.replace("%data%", project.url),
                 HTMLprojectImage.replace("%data%", project.image)
             ]);
         },
