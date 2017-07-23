@@ -134,6 +134,7 @@ a {
 
 
 
+
 /* TODO: Replace with image later */
 
 #header {
@@ -184,6 +185,7 @@ ul.sec_contacts {
 img {
     padding: 10px;
 }
+
 
 
 
@@ -299,6 +301,10 @@ span {
     .sec_contacts li {
         display: block;
         width: 100%;
+    }
+    #skills li.flex-item {
+        display: inline-block;
+        margin-right: 5px;
     }
     .sec_contacts .orange-text,
     .sec_contacts .white-text,
