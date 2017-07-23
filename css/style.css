@@ -127,14 +127,11 @@ a {
 }
 
 .dark-gray {
-    background-color: #4A4A4A;
+    background-color: #030303;
 }
 
-
-/* TODO: Replace with image later */
-
 #header {
-    /*background-color: #484848;*/
+    background-color: #030303;
     background: url(../images/banners.JPG) no-repeat center;
     background-size: cover;
     display: block;
