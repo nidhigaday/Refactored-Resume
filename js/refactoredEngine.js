@@ -9,14 +9,13 @@ $(function() {
             "role": "Front End Web Developer",
             "contacts": //JSON comtacts object within bio object
             {
-                "mobile": "647 000 000",
                 "email": "nidhi.gaday@gmail.com",
                 "github": "nidhigaday",
                 "linkedin": "NidhiGaday",
                 "location": "Toronto"
             },
             "message": "Hi! Thank you for visiting my resume. If you like it, lets chat!",
-            "skills": [" HTML", " CSS", " Javascript", " jQuery"],
+            "skills": [" HTML/CSS", " Javascript", " jQuery", " MVC", " Knockout.JS"],
             "bioPic": "images/propic.png"
         },
         work: [{ // JSON Object data
@@ -30,7 +29,7 @@ $(function() {
             {
                 "title": "Technical Support",
                 "employer": "Pearson Embanet",
-                "years": "Aug 2014 - Aug 2016",
+                "years": "Aug 2014 - Present",
                 "city": "Toronto",
                 "website": "http://embanet.com/",
                 "description": "LMS, RightNow, Technial Support, Troubleshooting, Multi-tasking"
@@ -62,25 +61,25 @@ $(function() {
             "dates": "2017",
             "description": "Javascript, jQuery, MVC",
             "url": "https://github.com/nidhigaday/Pup-Clicker",
-            "image": "images/pupclicker.JPG"
+            "image": "images/pupclicker.jpg"
         },{
             "title": "Responsive Mock-up",
             "dates": "2016",
             "description": "Mobile-first CSS, Responsive, No-page load",
             "url": "https://github.com/nidhigaday/responsive-mockup",
-            "image": "images/responsive.JPG"
+            "image": "images/responsive.jpg"
         },{
             "title": "Website Optimization",
             "dates": "2015",
             "description": "File Minificaiton, Page Speed Score",
             "url": "https://github.com/nidhigaday/Website_optimization",
-            "image": "images/optimization.JPG"
+            "image": "images/optimization.jpg"
         },{
             "title": "Frogger",
             "dates": "2015",
             "description": "HTML5, Object Oriented Javascript",
             "url": "https://github.com/nidhigaday/frogger",
-            "image": "images/frogger.JPG"
+            "image": "images/frogger.jpg"
         }]
     };
 
@@ -222,7 +221,6 @@ $(function() {
         },
         initContact: function(data) {
             view.renderContact([
-                HTMLmobile.replace("%data%", data.mobile),
                 HTMLemail.replace("%data%", data.email),
                 HTMLgithub.replace("%data%", data.github),
                 HTMLinkedin.replace("%data%", data.linkedin),
