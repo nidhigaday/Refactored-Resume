@@ -61,25 +61,25 @@ $(function() {
             "dates": "2017",
             "description": "Javascript, jQuery, MVC",
             "url": "https://github.com/nidhigaday/Pup-Clicker",
-            "image": "images/pupclicker.jpg"
+            "image": "images/pupclicker.JPG"
         },{
             "title": "Responsive Mock-up",
             "dates": "2016",
             "description": "Mobile-first CSS, Responsive, No-page load",
             "url": "https://github.com/nidhigaday/responsive-mockup",
-            "image": "images/responsive.jpg"
+            "image": "images/responsive.JPG"
         },{
             "title": "Website Optimization",
             "dates": "2015",
             "description": "File Minificaiton, Page Speed Score",
             "url": "https://github.com/nidhigaday/Website_optimization",
-            "image": "images/optimization.jpg"
+            "image": "images/optimization.JPG"
         },{
             "title": "Frogger",
             "dates": "2015",
             "description": "HTML5, Object Oriented Javascript",
             "url": "https://github.com/nidhigaday/frogger",
-            "image": "images/frogger.jpg"
+            "image": "images/frogger.JPG"
         }]
     };
 
