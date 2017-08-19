@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This project aimed to learn and practice Javascript basics and jQuery. Goal of this project is to create an online resume and displaying experience, education and project work.
+This project aimed to learn and practice Javascript basics and jQuery. The goal of this project is to create an online resume and displaying experience, education and project work.
 
 ### Targeted Skills:
 
